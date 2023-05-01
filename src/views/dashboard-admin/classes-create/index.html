@@ -8,69 +8,73 @@
     <title>Create class</title>
   </head>
   <body>
-    <aside>
-      <header>
-        <div class="option">
-          <img src="" alt="" />
-          <p>Administrador</p>
+    <main class="container classes-create-container">
+      <aside>
+        <div class="aside-content">
+          <header>
+            <a class="option" href="#">
+              <img src="../../../assets/png/4.png" alt="admin-icon" />
+              <p>Administrador</p>
+            </a>
+          </header>
+          <section class="users-options">
+            <a class="option" href="#">
+              <img src="../../../assets/png/10.png" alt="users-icon" />
+              <p>Usuarios</p>
+            </a>
+          </section>
+          <section class="courses-options">
+            <a class="option" href="#">
+              <img src="../../../assets/png/11.png" alt="course-create-icon" />
+              <p>Crear cursos</p>
+            </a>
+            <a class="option" href="#">
+              <img src="../../../assets/png/12.png" alt="class-edit-icon" />
+              <p>Editar clase</p>
+            </a>
+            <a class="option" href="#">
+              <img src="../../../assets/png/11.png" alt="course-edit-icon" />
+              <p>Editar cursos</p>
+            </a>
+          </section>
         </div>
-      </header>
-      <section class="users-options">
-        <div class="option">
-          <img src="" alt="" />
-          <p>Usuarios</p>
-        </div>
-      </section>
-      <section class="courses-options">
-        <div class="option">
-          <img src="" alt="" />
-          <p>Crear cursos</p>
-        </div>
-        <div class="option">
-          <img src="" alt="" />
-          <p>Editar clase</p>
-        </div>
-        <div class="option">
-          <img src="" alt="" />
-          <p>Editar cursos</p>
-        </div>
-      </section>
-    </aside>
-    <main class="classes-create">
-      <h1>Crear curso</h1>
-      <form action="">
-        <div class="data">
-          <div class="field">
-            <label for="class-number">Número de clase</label>
-            <input type="text" name="class-number" id="number" />
+      </aside>
+      <div class="classes-create">
+        <h1>Crear curso</h1>
+        <form action="">
+          <div class="data">
+            <div class="field">
+              <label for="class-number">Número de clase</label>
+              <input type="text" name="class-number" id="number" />
+            </div>
+            <div class="field">
+              <label for="class-title">Titulo de la clase</label>
+              <input type="text" name="class-title" id="title" />
+            </div>
+            <div class="field">
+              <label for="class-description">Descripción</label>
+              <textarea name="class-description" id="description"> </textarea>
+            </div>
+            <div class="field">
+              <label for="class-extras">Extras</label>
+              <input type="text" name="class-extras" id="extras" />
+            </div>
           </div>
-          <div class="field">
-            <label for="class-title">Titulo de la clase</label>
-            <input type="text" name="class-title" id="title" />
+          <div class="media-content">
+            <div class="field">
+              <label for="class-cover">Miniatura</label>
+              <input type="file" name="class-cover" id="cover" />
+            </div>
+            <div class="field">
+              <label for="class-video">Video</label>
+              <input type="file" name="class-video" id="video" />
+            </div>
           </div>
-          <div>
-            <label for="class-description">Descripción</label>
-            <textarea name="class-description" id="description"> </textarea>
+          <div class="actions">
+            <input type="submit" placeholder="Crear" />
           </div>
-          <div class="field">
-            <label for="class-extras">Extras</label>
-            <input type="text" name="class-extras" id="extras" />
-          </div>
-        </div>
-        <div class="media-content">
-          <div class="field">
-            <label for="class-cover">Miniatura</label>
-            <input type="file" name="class-cover" id="cover" />
-          </div>
-          <div class="field">
-            <label for="class-video">Video</label>
-            <input type="file" name="class-video" id="video" />
-          </div>
-        </div>
-        <div class="actions">
-          <input type="submit" placeholder="Crear" />
-        </div>
-      </form>
+        </form>
+      </div>
     </main>
   </body>
 </html>
