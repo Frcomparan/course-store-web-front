@@ -40,7 +40,7 @@
         </div>
       </aside>
       <div class="classes-create">
-        <h1>Crear curso</h1>
+        <h1>Crear clase</h1>
         <form action="">
           <div class="data">
             <div class="field">
@@ -62,19 +62,31 @@
           </div>
           <div class="media-content">
             <div class="field">
-              <label for="class-cover">Miniatura</label>
-              <input type="file" name="class-cover" id="cover" />
+              <label for="class-cover">
+                <span>Miniatura</span>
+                <input type="file" name="class-cover" id="class-cover" />
+                <div class="upload">
+                  <img
+                    src="../../../assets/png/7.png"
+                    alt="uploaded-cover"
+                    id="cover"
+                  />
+                </div>
+              </label>
             </div>
             <div class="field">
-              <label for="class-video">Video</label>
-              <input type="file" name="class-video" id="video" />
+              <label for="class-video">
+                <span>Video</span>
+              </label>
+              <input type="file" name="class-video" id="class-video" />
             </div>
           </div>
           <div class="actions">
-            <input type="submit" placeholder="Crear" />
+            <input type="submit" value="Crear" />
           </div>
         </form>
       </div>
     </main>
+    <script src="./js/index.js" defer></script>
   </body>
 </html>

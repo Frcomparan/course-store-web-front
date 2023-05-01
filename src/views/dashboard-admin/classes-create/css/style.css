@@ -59,6 +59,8 @@ html {
 /* Form design */
 .classes-create {
   padding: 30px 0px 0px 50px;
+  width: 70%;
+  max-width: 1000px;
 }
 
 .classes-create h1 {
@@ -72,9 +74,15 @@ html {
   gap: 30px;
 }
 
-form .data,
 form .media-content {
-  width: 48%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form .data {
+  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -126,6 +134,34 @@ form .media-content {
 
 .actions input:hover {
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+.upload {
+  display: grid;
+  place-items: center;
+}
+
+.field label {
+  position: relative;
+}
+
+.field label > input {
+  display: none;
+}
+
+.upload img {
+  width: 200px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.upload img:hover {
+  transform: scale(1.05);
+  background-color: rgba(150, 150, 149, 0.37);
   -webkit-transform: scale(1.05);
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
