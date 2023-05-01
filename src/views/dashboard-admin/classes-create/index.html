@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Create class</title>
+  </head>
+  <body>
+    <aside>
+      <header>
+        <div class="option">
+          <img src="" alt="" />
+          <p>Administrador</p>
+        </div>
+      </header>
+      <section class="users-options">
+        <div class="option">
+          <img src="" alt="" />
+          <p>Usuarios</p>
+        </div>
+      </section>
+      <section class="courses-options">
+        <div class="option">
+          <img src="" alt="" />
+          <p>Crear cursos</p>
+        </div>
+        <div class="option">
+          <img src="" alt="" />
+          <p>Editar clase</p>
+        </div>
+        <div class="option">
+          <img src="" alt="" />
+          <p>Editar cursos</p>
+        </div>
+      </section>
+    </aside>
+    <main class="classes-create">
+      <h1>Crear curso</h1>
+      <form action="">
+        <div class="data">
+          <div class="field">
+            <label for="class-number">Número de clase</label>
+            <input type="text" name="class-number" id="number" />
+          </div>
+          <div class="field">
+            <label for="class-title">Titulo de la clase</label>
+            <input type="text" name="class-title" id="title" />
+          </div>
+          <div>
+            <label for="class-description">Descripción</label>
+            <textarea name="class-description" id="description"> </textarea>
+          </div>
+          <div class="field">
+            <label for="class-extras">Extras</label>
+            <input type="text" name="class-extras" id="extras" />
+          </div>
+        </div>
+        <div class="media-content">
+          <div class="field">
+            <label for="class-cover">Miniatura</label>
+            <input type="file" name="class-cover" id="cover" />
+          </div>
+          <div class="field">
+            <label for="class-video">Video</label>
+            <input type="file" name="class-video" id="video" />
+          </div>
+        </div>
+        <div class="actions">
+          <input type="submit" placeholder="Crear" />
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
