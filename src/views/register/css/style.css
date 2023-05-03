@@ -1,0 +1,168 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
+.container {
+	display: flex;
+	height: 100vh;
+}
+
+.left-half {
+	flex: 1;
+	background-image: url("../img/istockphoto-1267693403-1024x1024-transformed.jpeg");
+	background-size: cover;
+    /*Animacion*/
+    animation-name: slide-in-left;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.right-half {
+	flex: 1;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    font-family: "TT Commons Pro", sans-serif;
+    color: #f9f7f0;
+}
+
+.login-box {
+	background-color: #000;
+	padding: 30px;
+	border-radius: 10px;
+	text-align: center;
+    /*Animation*/
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+h2 {
+	margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+	width: 510.1px;
+	padding: 10px;
+	border-radius: 50px;
+	border: none;
+	margin-bottom: 10px;
+    text-indent: 30px;
+}
+
+::placeholder {
+    color: #000;
+    opacity: 10;
+    text-indent: 30px;
+}
+
+input[type="text"]{
+    background-color: #fff;
+	color: #000;
+	background-image: url("../img/icons8-user-50.png");
+	background-position: 10px center;
+	background-size: auto 20px;
+	background-repeat: no-repeat;
+    font-size: 20px;
+}
+
+input[type="email"] {
+	background-color: #fff;
+	color: #000;
+	background-image: url("../img/icons8-email-50.png");
+	background-position: 10px center;
+	background-size: auto 20px;
+	background-repeat: no-repeat;
+    font-size: 20px;
+}
+
+input[type="password"] {
+	background-color: #fff;
+	color: #000;
+	background-image: url("../img/icons8-password-50.png");
+	background-position: 10px center;
+	background-size: auto 20px;
+	background-repeat: no-repeat;
+    font-size: 20px;
+}
+
+a {
+	color: #f9f7f0;
+	text-decoration: none;
+    font-size: 18px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+button[type="submit"] {
+	background-color: #2452ab;
+	color: #f9f7f0;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border: none;
+	cursor: pointer;
+	margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 350px;
+	transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: navy;
+}
+
+p {
+	margin-top: 20px;
+    color: #fff;
+    font-size: 18px;
+}

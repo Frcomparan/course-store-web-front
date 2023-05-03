@@ -4,6 +4,11 @@
 	box-sizing: border-box;
 }
 
+body {
+    overflow: hidden;
+    background-color: #000;
+}
+
 .container {
 	display: flex;
 	height: 100vh;
@@ -13,7 +18,24 @@
 	flex: 1;
 	background-image: url("../img/pexels-steshka-willems-2553651.jpg");
 	background-size: cover;
+    /*Animacion*/
+    animation-name: slide-in-left;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
+
+@keyframes slide-in-left {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
 
 .right-half {
 	flex: 1;
@@ -30,7 +52,25 @@
 	padding: 30px;
 	border-radius: 10px;
 	text-align: center;
+    /*Animation*/
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
+
+@keyframes slide-in {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
 
 h2 {
 	margin-bottom: 20px;
@@ -103,6 +143,11 @@ button[type="submit"] {
     font-size: 18px;
     font-weight: bold;
     width: 350px;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: navy;
 }
 
 p {
